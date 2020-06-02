@@ -40,6 +40,10 @@ li {
     padding-right: 4rem;
 }
 
+.secciones-indice {
+    padding-left: 2rem;
+}
+
 main {
     padding: 3rem 2rem 2rem 100px;
     margin-left: 130px;
@@ -52,6 +56,7 @@ main {
     top: 0px;
     bottom: 0px;
     width: 450px;
+    height: 100%;
     background-color: #242939;
     color: white;
     left: -450px;
@@ -95,7 +100,7 @@ main {
 
   .indice {
       position: absolute;
-      left: 100px;
+      left: 70px;
       top: 80px;
   }
 
