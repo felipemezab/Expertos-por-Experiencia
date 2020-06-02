@@ -9,6 +9,9 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
             </style>
+    <script>function show() {
+        document.getElementById('sidebar').classList.toggle('active');
+      }</script>
 
 </head>
 
@@ -29,13 +32,29 @@
         </section>
     </main>
 
-    <aside>
-        <div class="burgermenu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <aside id="sidebar">
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            
+            <section class="indice">
+                <h3>Índice</h3>
+                <ul>
+                    <li>Agradecimientos</li>
+                    <li>Dedicatoria</li>
+                    <li>Presentaciones</li>
+                    <li>Prólogo</li>
+                </ul>
+            </section>
+
+
+
     </aside>
+
 
 </body>
 

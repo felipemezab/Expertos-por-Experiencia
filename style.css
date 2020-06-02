@@ -19,6 +19,11 @@ h2 {
     padding-top: 2rem;
 }
 
+h3 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
 ol#menu li {
     display: inline;
 }
@@ -39,28 +44,43 @@ main {
 
 }
 
-aside {
+#sidebar {
     position: absolute;
     right: 0px;
     top: 0px;
     bottom: 0px;
-    width: 60px;
+    width: 600px;
     background-color: #242939;
-    padding: 1rem;
-
     color: white;
-
-   
+    right: -595px;
 }
 
-div {
-    width: 35px;
-    height: 4px;
-    background-color: white;
-    margin: 6px 0;
-  }
+#sidebar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem 0 0 0;
 
-  .burgermenu {
-      margin: auto;
-      margin-top: 2rem;
+}
+
+#sidebar.active {
+    right: 0;
+}
+
+.indice {
+    padding: 3rem 3rem 3rem 10rem;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+  }
+  
+  .toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    margin-top: 4px;
   }
