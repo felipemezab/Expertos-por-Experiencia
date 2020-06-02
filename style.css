@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 400;
 }
 
@@ -32,6 +32,7 @@ header {
 
     padding: 2rem 2rem 2rem 100px;
     font-size: 20px;
+    margin-right: 105px;
 }
 
 li {
@@ -40,7 +41,7 @@ li {
 
 main {
     padding: 3rem 2rem 2rem 100px;
-    margin-right: 92px;
+    margin-right: 105px;
 
 }
 
@@ -49,13 +50,12 @@ main {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    width: 600px;
+    width: 550px;
     background-color: #242939;
     color: white;
-    right: -595px;
 }
 
-#sidebar ul li {
+#sidebar ol li {
     list-style: none;
     color: #fff;
     font-size: 20px;
@@ -63,13 +63,7 @@ main {
 
 }
 
-#sidebar.active {
-    right: 0;
-}
 
-.indice {
-    padding: 3rem 3rem 3rem 10rem;
-}
 
 #sidebar .toggle-btn {
     position: absolute;
@@ -84,3 +78,11 @@ main {
     display: block;
     margin-top: 4px;
   }
+
+  .indice {
+      position: absolute;
+      left: 120px;
+      top: 65px;
+  }
+
+  
