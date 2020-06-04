@@ -25,15 +25,33 @@ h3 {
     font-weight: 400;
 }
 
+nav.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 2rem;
+    border-radius: 3px;
+    margin-right: 2rem;
+}
+
+nav.menu a:hover {
+    color: white;
+    border: #242939 solid 1px;
+    background-color: #242939;
+}
+
+nav.menu {
+    position: absolute;
+    left: 230px;
+}
+
+
 ol#menu li {
     display: inline;
 }
 
 header {
-
     padding: 2rem 2rem 2rem 100px;
     font-size: 20px;
-    margin-left: 130px;
 }
 
 li {
@@ -47,7 +65,12 @@ li {
 main {
     padding: 3rem 2rem 2rem 100px;
     margin-left: 130px;
+}
 
+p.autores {
+    padding-top: 15em;
+    color: grey;
+    font-style: italic;
 }
 
 .sidebar {
@@ -75,28 +98,66 @@ main {
 
 }
 
-
+section.menuvertical {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 78px;
+    height: 100%;
+    background-color: #242939;
+}
 
 .toggle-btn {
     position: absolute;
-    top: 70px;
-    left: 70px;
+    top: 1.5em;
+    align-content: center;
+    left: 1em;
     cursor: pointer;
-    transition: right 0.9s ease;
+    
+    padding: 5px 5px 8px 5px;
+    border-radius: 3px;
+    
   }
   
   .toggle-btn span {
-    width: 45px;
+    width: 35px;
     height: 4px;
-    background: black;
+    background: #fff;
     display: block;
-    margin-top: 8px;
+    margin-top: 6px;
     border-radius: 3px;
   }
+
+  .toggle-btn:hover {
+      border: none;
+      background-color: #fff;
+}
+
+.toggle-btn:hover span {
+    background: #242939;
+}
+
+
 
   .toggle-btn.click {
       left: 500px;
   }
+
+
+p.indicevertical {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    position: absolute;
+    left: 3rem;
+    top: 22rem;
+    line-height: 1;
+    width: 24rem;
+    height: 2em;
+    color: #fff;
+}
+
+
 
   .indice {
       position: absolute;
