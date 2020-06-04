@@ -25,6 +25,10 @@ h3 {
     font-weight: 400;
 }
 
+.head {
+    display: flex;
+}
+
 nav.menu a {
     text-decoration: none;
     color: black;
@@ -58,7 +62,7 @@ li {
     padding-right: 4rem;
 }
 
-.secciones-indice {
+.sec-indice {
     padding-left: 2rem;
 }
 
@@ -77,7 +81,6 @@ p.autores {
     position: absolute;
     left: 0px;
     top: 0px;
-    bottom: 0px;
     width: 528px;
     height: 100%;
     background-color: #242939;
@@ -90,10 +93,6 @@ p.autores {
     left: 0px;
 }
 
-.sidebar ol li {
-    color: #fff;
-
-}
 
 section.menuvertical {
     
