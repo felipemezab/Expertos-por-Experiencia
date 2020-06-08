@@ -31,44 +31,42 @@ h3 {
 
 nav.menu a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 5px 2rem;
     border-radius: 3px;
     margin-right: 2rem;
+    border: #546de5 solid 1px;
+    background-color: #546de5;
 }
 
-nav.menu a:hover {
-    color: white;
-    border: #242939 solid 1px;
-    background-color: #242939;
-}
 
-nav.menu {
-    position: absolute;
     left: 210px;
 }
 
 
-ol#menu li {
-    display: inline;
-}
 
 header {
-    padding: 2rem 2rem 2rem 100px;
+    padding: 2rem 2rem 2rem 0px;
     font-size: 20px;
+    margin-left: 180px;
 }
 
-li {
-    padding-right: 4rem;
-}
-
-.sec-indice {
-    padding-left: 2rem;
-}
 
 main {
-    padding: 3rem 2rem 2rem 100px;
-    margin-left: 130px;
+    margin-top: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    
+}
+
+.section div:hover {
+    border: orange solid 1px;
+}
+
+div.section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 3em;
 }
 
 p.autores {
@@ -77,88 +75,12 @@ p.autores {
     font-style: italic;
 }
 
-.sidebar {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 528px;
-    height: 100%;
-    background-color: #242939;
-    color: white;
-    left: -450px;
-    transition: left 0.4s ease;
-}
-
-.sidebar.show {
-    left: 0px;
-}
 
 
-section.menuvertical {
-    
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 78px;
-    height: 100%;
-    background-color: #242939;
-}
 
-.toggle-btn {
-    position: absolute;
-    top: 1.5em;
-    align-content: center;
-    left: 1em;
-    cursor: pointer;
-    z-index: 100;
-    padding: 5px 5px 8px 5px;
-    border-radius: 3px;
-    transition: left 0.5s ease;
-    
-  }
+
   
-.toggle-btn span {
-    width: 35px;
-    height: 4px;
-    background: #fff;
-    display: block;
-    margin-top: 6px;
-    border-radius: 3px;
-  }
-
-.toggle-btn:hover {
-      border: none;
-      background-color: #fff;
-}
-
-.toggle-btn:hover span {
-    background: #242939;
-}
 
 
 
-.toggle-btn.click {
-      left: 460px;
-  }
 
-
-nav.sidebar p {
-    transform: rotate(90deg);
-    transform-origin: top left;
-    position: absolute;
-    left: 31rem;
-    line-height: 2;
-    width: 385px;
-    height: 2em;
-    color: #fff;
-    border-bottom:  solid 1px;
-    padding-left: 23rem;
-    padding-bottom: 19px;
-}
-
-
-.indice {
-      position: absolute;
-      left: 70px;
-      top: 80px;
-  }
