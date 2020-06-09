@@ -40,6 +40,16 @@ ol {
     padding-top: 10px;
 }
 
+ol li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+ol a:hover {
+    color: #546de5;
+}
+
 
 
 .head {
@@ -49,20 +59,22 @@ ol {
 nav.menu a {
     text-decoration:none;
     color: #000;
-    padding: 5px 2rem;
+    padding: 10px;
     border-radius: 3px;
     margin-right: 2rem;
     border: white solid 1px;
 }
 
 nav.menu a.home {
-    background-color: #e66767;
+    background-color: #546de5;
     color: white;
+    border: none;
     padding: 10px;
+    
 }
 
 nav.menu a.home:hover {
-    background-color: #e66767;
+    background-color: #546de5;
     color: white;
     padding: 10px;
 }
@@ -70,7 +82,6 @@ nav.menu a.home:hover {
 nav.menu a:hover {
     background-color: #546de5;
     color: white;
-
 }
 
 
@@ -82,7 +93,7 @@ header {
 }
 
 div.bread {
-    margin-left: 190px;
+    margin-left: 180px;
     color: grey;
 }
 
