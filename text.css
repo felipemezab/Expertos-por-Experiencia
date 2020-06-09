@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lora, serif;
+}
+
+section.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    margin: auto 3em;
+}
+.img {
+    background-color: #f8db91;
+}
+
+img {
+    height: 650px;
+    display: block;
+    margin: auto;
+    padding-top: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.texto {
+    padding: 3em 2em 3em 3em;
+}
