@@ -8,6 +8,22 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+
+
+#sec1, #sec2, #sec3, #sec4, #sec5, #sec6 {
+    height: 100vh;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 400;
@@ -25,18 +41,16 @@ h3 {
     font-weight: 400;
 }
 
-li.cap {
+p {
     font-size: 20px;
-    font-weight: 400px;
-    padding-top: 1em;
-    color: #546de5;
-
+    color: #000;
 }
+
 
 ol {
     text-decoration: none;
     list-style: none;
-    font-size: 18px;
+    font-size: 13px;
     padding-top: 10px;
 }
 
@@ -84,12 +98,14 @@ nav.menu a:hover {
     color: white;
 }
 
-
-
 header {
     padding: 2rem 2rem 2rem 0px;
     font-size: 20px;
-    margin-left: 180px;
+    padding-left: 180px;
+    margin-right: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
 }
 
 div.bread {
@@ -97,27 +113,28 @@ div.bread {
     color: grey;
 }
 
-main {
-    margin-top: 100px;
-    margin-left: 180px;
-    margin-right: 180px;
-    
-}
-
-.section div:hover {
-    border: orange solid 1px;
-}
 
 div.section {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     row-gap: 2em;
+    padding-top: 130px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+a ol#sumairo {
+    font-size: 2px;
 }
 
 p.autores {
     padding-top: 15em;
     color: grey;
     font-style: italic;
+}
+
+.cap {
+    color: #546de5;
 }
 
 
