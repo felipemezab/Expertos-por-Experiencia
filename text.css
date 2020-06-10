@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Lora, serif;
@@ -11,7 +14,7 @@ section.grid {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
-    margin: auto 3em;
+    
 }
 .img {
     background-color: #f8db91;
@@ -32,9 +35,40 @@ h3 {
 
 p {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 27px;
 }
 
-.texto {
-    padding: 3em 2em 3em 3em;
+.texto-d {
+    padding: 5em 6em 5em 2em;
 }
+.texto-i {
+    padding: 5em 2em 5em 6em;
+}
+
+
+
+
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+  }
