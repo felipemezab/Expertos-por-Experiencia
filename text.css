@@ -13,11 +13,12 @@ body {
 section.grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
     
 }
 .img {
-    background-color: #f8db91;
+    background-color: #b2bec3;
+    display: flex;
+    height: 100vh;
 }
 
 img {
@@ -36,39 +37,41 @@ h3 {
 p {
     font-size: 18px;
     line-height: 27px;
+    max-width: 30em;
 }
 
 .texto-d {
-    padding: 5em 6em 5em 2em;
+    padding: 3em 6em 5em 3em;
 }
 .texto-i {
-    padding: 5em 2em 5em 6em;
+    padding: 3em 0em 5em 8em;
 }
 
-
-
-
-
-
-/* Style the header: fixed position (always stay at the top) */
-.header {
+a.btn-siguiente {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    
+}
+.sidebar {
     position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
-  }
-  
-  /* The progress container (grey background) */
-  .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-  }
-  
-  /* The progress bar (scroll indicator) */
-  .progress-bar {
-    height: 8px;
-    background: #4caf50;
-    width: 0%;
-  }
+    right: 0;
+    background-color: #192a56;
+    height: 100vh;
+    width: 6vh;
+    color: white;
+ }
+
+
+@media (max-width: 1200px){
+    section.grid {
+        grid-template-columns: 100%;
+    }
+    .texto-d, .texto-i {
+        margin: auto;
+        padding: 3em;
+    }
+    a.btn-siguiente {
+        display: none;
+    }
+}
