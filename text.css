@@ -13,7 +13,7 @@ body {
 section.grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    
+    height: 100vh;
 }
 .img {
     background-color: #b2bec3;
@@ -37,14 +37,14 @@ h3 {
 p {
     font-size: 18px;
     line-height: 27px;
-    max-width: 30em;
+    max-width: 27em;
 }
 
 .texto-d {
-    padding: 3em 6em 5em 3em;
+    padding: 3em 6em 5em 4em;
 }
 .texto-i {
-    padding: 3em 0em 5em 8em;
+    padding: 3em 0em 5em 5em;
 }
 
 a.btn-siguiente {
@@ -66,12 +66,18 @@ a.btn-siguiente {
 @media (max-width: 1200px){
     section.grid {
         grid-template-columns: 100%;
+        height: 100%;
     }
     .texto-d, .texto-i {
         margin: auto;
-        padding: 3em;
+        height: 100%;
+        padding: 0;
+        padding-top: 12px;
     }
     a.btn-siguiente {
         display: none;
+    }
+    .img {
+        margin-bottom: 2em;
     }
 }
