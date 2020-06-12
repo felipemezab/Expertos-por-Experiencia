@@ -9,128 +9,126 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
     </style>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 </head>
 
 <body>
-    <div id="pag1">
-        <div class="sidebar">
-            
+
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
         </div>
-        <section class="grid">
-            <div class="img">
-                <img src="images/cubos.png" alt="cubos">
-            </div>
-            <div class="texto-d">
-                <h3>Prólogo</h3>
-                <p>Este libro relata la historia de un grupo personas que durante los últimos tres años han formado un
-                    nuevo grupo de investigación en la universidad. A lo largo de este tiempo han pasado muchas cosas.
-                    Pero lo
-                    más importante, creemos, es que han pasado de ser asesores a ser socios colaboradores en la
-                    investigación como “expertos por experiencia”. Esto significa que han trabajando a la par con los
-                    académicos en
-                    los asuntos en los que ellos saben más que otras personas y que afectan directamente su calidad de
-                    vida.
-                    El inicio de este caminar ha estado acompañado por un grupo de profesores de la Pontificia
-                    Universidad Católica de Valparaíso, quienes han manifestado la necesidad, no sólo de reconocer los
-                    cambios
-                    paradigmáticos en el trabajo con personas con discapacidad, sino que interpelan sus propias
-                    prácticas para repensar el rol y la relevancia que tiene la participación de las personas con
-                    discapacidad
-                    intelectual dentro de los procesos de innovación y de investigación. Pero, ¿por qué se forma un
-                    grupo de investigación con estas características? y ¿cuál es su foco?
-                    En primer lugar reconocemos a la persona como eje central de los cambios sociales, lo que significa
-                    valorar su voz y su testimonio.</p>
-                <a href="#pag2" class="btn-siguiente">siguiente</a>
-            </div>
-        </section>
     </div>
 
-    <div id="pag2">
-        <section class="grid">
-            <div class="texto-i">
-                <p>En segundo lugar pensamos que cada persona tiene un potencial
-                    creativo que le permite imaginar y proponer soluciones a sus propios problemas.En tercer lugar, se
-                    entiende que abordar nuevas problemáticas sociales requiere de diferentes miradas
-                    convergentes. Sin duda podríamos enumerar una larga lista de motivos para embarcamos en este
-                    proyecto.
-                    Trabajar con
-                    personas con discapacidad, de cualquier tipo, nos exige más hospitalidad, mejores métodos y mejores
-                    diseños. Todo lo que aprendemos es altamente transferible a otros escenarios y contextos, porque
-                    pensar
-                    desde la accesibilidad produce soluciones que nos benefician a todos.
-                    El camino elegido para hacer frente a este desafío han sido los lineamientos de la investigación
-                    inclusiva y el codiseño. Ellos reconocen a las personas con discapacidad intelectual como expertos
-                    por
-                    experiencia, es decir, las voces autorizadas para proponer las innovaciones que puedan mejorar su
-                    propia
-                    calidad de vida. Esta mirada centrada en el respeto a las individualidades realza y valora las
-                    capacidades de las personas para darles voz y voto en un espacio donde antes no participaban.
-                    A partir de la experiencia y los relatos de las personas, podemos imaginar, redefinir y transformar
-                    nuestra relación con los entornos y la tecnología. La pregunta que nos motiva es ¿cómo podemos hacer
-                    productos, entornos o
-
-                </p>
+        <div id="pag1">
+            <div class="content">
+                <div class="texto-i">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consectetur quas error veniam
+                        officiis illo. Sit iure natus quidem modi illo. Adipisci odit labore id a quod molestiae incidunt
+                        explicabo maiores temporibus rerum voluptas neque possimus cum accusantium ex odio perspiciatis,
+                        perferendis ratione unde? Neque, explicabo quam debitis cupiditate magni delectus a praesentium eos sint
+                        consectetur possimus vero necessitatibus accusantium sequi adipisci iusto quia et in quaerat dolorum
+                        corporis. Nam veritatis nobis perferendis quae, doloremque saepe iste dignissimos eligendi vel
+                        praesentium enim itaque! Molestias, quod placeat dolor impedit ex magnam nisi rerum deleniti quia optio
+                        eos perspiciatis quaerat ipsa earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta quo! In, ipsa? Temporibus rem
+                        repudiandae eum? Doloribus id sed ab, assumenda eligendi accusantium dolorum nulla earum? Quos odit
+                        corrupti nobis hic velit, ea repellat, amet perspiciatis consequuntur dicta culpa exercitationem ipsam
+                        soluta possimus eaque rerum quasi iste dolores. Totam?</p>
+                        <p>lorem lore lorem lorem lorem lore lorem lorem lorem a skd</p>
+                </div>
+                <div class="texto-d">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consectetur quas error veniam
+                        officiis illo. Sit iure natus quidem modi illo. Adipisci odit labore id a quod molestiae incidunt
+                        explicabo maiores temporibus rerum voluptas neque possimus cum accusantium ex odio perspiciatis,
+                        perferendis ratione unde? Neque, explicabo quam debitis cupiditate magni delectus a praesentium eos sint
+                        consectetur possimus vero necessitatibus accusantium sequi adipisci iusto quia et in quaerat dolorum
+                        corporis. Nam veritatis nobis perferendis quae, doloremque saepe iste dignissimos eligendi vel
+                        praesentium enim itaque! Molestias, quod placeat dolor impedit ex magnam nisi rerum deleniti quia optio
+                        eos perspiciatis quaerat ipsa earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta quo! In, ipsa? Temporibus rem
+                        repudiandae eum? Doloribus id sed ab, assumenda eligendi accusantium dolorum nulla earum? Quos odit
+                        corrupti nobis hic velit, ea repellat, amet perspiciatis consequuntur dicta culpa exercitationem ipsam
+                        soluta possimus eaque rerum quasi iste dolores. Totam?</p>
+                </div>
             </div>
-            <div class="texto-d">
-                <p>servicios que consideren y satisfagan sus necesidades, y sobre todo, ¿cómo
-                    podemos
-                    ayudar a elevar nuestra calidad de vida? La investigación inclusiva y el codiseño tienen la
-                    capacidad de
-                    empoderar a las personas desde su singular creatividad, entendiendo que el foco central está en
-                    reconocer y valorar las experiencias vitales para así comprender mejor sus necesidades. Desde este
-                    punto de partida buscamos promover su participación y su creatividad, tanto de forma
-                    individual como
-                    colectiva, para idear soluciones tecnológicas que puedan ser más accesibles e inclusivas. Se trata
-                    de
-                    darles el espacio para que nos digan qué cosas son más relevantes para el mundo con discapacidad
-                    intelectual, y cómo, entre todos, podemos pensar, diseñar y desarrollar los próximos productos,
-                    espacios
-                    o servicios. Al pasar el tiempo es preciso mirar hacia atrás e intentar analizar el camino y
-                    experiencias vividas durante estos dos años. Para esto es necesario precisar acciones significativas
-                    para todo el grupo, entre estas queremos destacar el reconocimiento de las capacidades de cada uno y
-                    cómo estas se van conjugando en un bien mayor. Este proceso no ha sido fácil y requiere de renuncias
-                    personales en pro del trabajo en equipo. Otro elemento a destacar es llegar a reconocerse como
-                    investigador, comprendiendo el rol que jugamos en este proceso y cómo personas sin preparación
-                    formal
-                    para investigar pueden
-                </p>
-                <a href="#pag3" class="btn-siguiente">siguiente</a>
+        </div>
+        <div id="pag2">
+            <div class="content">
+                <div class="texto-i">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consectetur quas error veniam
+                        officiis illo. Sit iure natus quidem modi illo. Adipisci odit labore id a quod molestiae incidunt
+                        explicabo maiores temporibus rerum voluptas neque possimus cum accusantium ex odio perspiciatis,
+                        perferendis ratione unde? Neque, explicabo quam debitis cupiditate magni delectus a praesentium eos sint
+                        consectetur possimus vero necessitatibus accusantium sequi adipisci iusto quia et in quaerat dolorum
+                        corporis. Nam veritatis nobis perferendis quae, doloremque saepe iste dignissimos eligendi vel
+                        praesentium enim itaque! Molestias, quod placeat dolor impedit ex magnam nisi rerum deleniti quia optio
+                        eos perspiciatis quaerat ipsa earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta quo! In, ipsa? Temporibus rem
+                        repudiandae eum? Doloribus id sed ab, assumenda eligendi accusantium dolorum nulla earum? Quos odit
+                        corrupti nobis hic velit, ea repellat, amet perspiciatis consequuntur dicta culpa exercitationem ipsam
+                        soluta possimus eaque rerum quasi iste dolores. Totam?</p>
+                        <p>lorem lore lorem lorem lorem lore lorem lorem lorem a skd</p>
+                </div>
+                <div class="texto-d">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consectetur quas error veniam
+                        officiis illo. Sit iure natus quidem modi illo. Adipisci odit labore id a quod molestiae incidunt
+                        explicabo maiores temporibus rerum voluptas neque possimus cum accusantium ex odio perspiciatis,
+                        perferendis ratione unde? Neque, explicabo quam debitis cupiditate magni delectus a praesentium eos sint
+                        consectetur possimus vero necessitatibus accusantium sequi adipisci iusto quia et in quaerat dolorum
+                        corporis. Nam veritatis nobis perferendis quae, doloremque saepe iste dignissimos eligendi vel
+                        praesentium enim itaque! Molestias, quod placeat dolor impedit ex magnam nisi rerum deleniti quia optio
+                        eos perspiciatis quaerat ipsa earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta quo! In, ipsa? Temporibus rem
+                        repudiandae eum? Doloribus id sed ab, assumenda eligendi accusantium dolorum nulla earum? Quos odit
+                        corrupti nobis hic velit, ea repellat, amet perspiciatis consequuntur dicta culpa exercitationem ipsam
+                        soluta possimus eaque rerum quasi iste dolores. Totam?</p>
+                </div>
             </div>
-    </div>
-    </section>
-    <div class="" id="pag3">
-        <section class="grid">
-            <div class="texto-i">
-                <p>recoger las necesidades de otras personas, reconocer la importancia de lo que
-                    pasa en sus vidas y reconocer también temas sociales les afectan. Por otra parte, para quienes sí
-                    tienen
-                    formación, el desafío de reconocer que ser investigador no es privativo de un grupo selecto, sino
-                    que el
-                    indagar de forma consistente y sistemática nos pertenece a todos, sobre todo cuando aquellos sobre
-                    lo
-                    cual indagamos tiene un impacto directo en nuestra vida. Por otra parte, para el grupo de profesionales, este proceso ha significado aceptar y renunciar a
-                    expectativas y concepciones preconcebidas desde cada disciplina. El trabajo conjunto ha exigido gran
-                    flexibilidad y adaptación, pero sobre todo, una mente abierta a encontrar verdaderos tesoros donde
-                    no
-                    acostumbrábamos a buscar.
-                    El proceso que hemos llevado a cabo como equipo de investigación ha tenido como norte el incorporar
-                    de
-                    forma plena a este grupo asesor, queriendo avanzar progresivamente desde un rol de sujetos de la
-                    investigación a participantes a asesores a validadores a codiseñadores y a coinvestigadores. Pero
-                    este
-                    avance no ha sido tan nítido ni tan claro como quisiéramos. Sabemos que este esfuerzo requiere
-                    trabajo
-                    de todos y muchas veces retrocedemos. El aprendizaje de esta investigación es lo que queremos
-                    compartir
-                    en este libro, en la forma de comprender el momento y lugar para cada rol y cómo debemos hacer
-                    accesible
-                    y transparente nuestro proceso en cada una de sus etapas.
-                </p>
+        </div>
+        <div id="pag3">
+            <div class="content">
+                <div class="texto-i">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consectetur quas error veniam
+                        officiis illo. Sit iure natus quidem modi illo. Adipisci odit labore id a quod molestiae incidunt
+                        explicabo maiores temporibus rerum voluptas neque possimus cum accusantium ex odio perspiciatis,
+                        perferendis ratione unde? Neque, explicabo quam debitis cupiditate magni delectus a praesentium eos sint
+                        consectetur possimus vero necessitatibus accusantium sequi adipisci iusto quia et in quaerat dolorum
+                        corporis. Nam veritatis nobis perferendis quae, doloremque saepe iste dignissimos eligendi vel
+                        praesentium enim itaque! Molestias, quod placeat dolor impedit ex magnam nisi rerum deleniti quia optio
+                        eos perspiciatis quaerat ipsa earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta quo! In, ipsa? Temporibus rem
+                        repudiandae eum? Doloribus id sed ab, assumenda eligendi accusantium dolorum nulla earum? Quos odit
+                        corrupti nobis hic velit, ea repellat, amet perspiciatis consequuntur dicta culpa exercitationem ipsam
+                        soluta possimus eaque rerum quasi iste dolores. Totam?</p>
+                        <p>lorem lore lorem lorem lorem lore lorem lorem lorem a skd</p>
+                </div>
+                <div class="texto-d">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consectetur quas error veniam
+                        officiis illo. Sit iure natus quidem modi illo. Adipisci odit labore id a quod molestiae incidunt
+                        explicabo maiores temporibus rerum voluptas neque possimus cum accusantium ex odio perspiciatis,
+                        perferendis ratione unde? Neque, explicabo quam debitis cupiditate magni delectus a praesentium eos sint
+                        consectetur possimus vero necessitatibus accusantium sequi adipisci iusto quia et in quaerat dolorum
+                        corporis. Nam veritatis nobis perferendis quae, doloremque saepe iste dignissimos eligendi vel
+                        praesentium enim itaque! Molestias, quod placeat dolor impedit ex magnam nisi rerum deleniti quia optio
+                        eos perspiciatis quaerat ipsa earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta quo! In, ipsa? Temporibus rem
+                        repudiandae eum? Doloribus id sed ab, assumenda eligendi accusantium dolorum nulla earum? Quos odit
+                        corrupti nobis hic velit, ea repellat, amet perspiciatis consequuntur dicta culpa exercitationem ipsam
+                        soluta possimus eaque rerum quasi iste dolores. Totam?</p>
+                </div>
             </div>
-        </section>
-    </div>
-
-
+        </div>
 </body>
 
 </html>
