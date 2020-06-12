@@ -93,20 +93,27 @@ img {
 }
 
 @media (max-width: 1200px){
-    section.grid {
+    .content {
         grid-template-columns: 100%;
-        height: 100%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        margin: 2rem auto;
+        
     }
-    .texto-d, .texto-i {
-        margin: auto;
-        height: 100%;
-        padding: 0;
-        padding-top: 12px;
-    }
-    a.btn-siguiente {
+    .btn-siguiente, .btn-anterior {
         display: none;
     }
-    .img {
-        margin-bottom: 2em;
+    .texto-d, .texto-i {
+        padding: 0;
+    }
+    p {
+        max-width: 30em;
+        margin: auto;
+    }
+    #pag1, #pag2, #pag3 {
+        height: 100%;
+    }
+    .img-capitulo {
+        margin-bottom: 4em;
     }
 }
