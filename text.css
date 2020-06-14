@@ -25,6 +25,14 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
+h2 {
+    padding-bottom: 2em;
+    font-size: 28px;
+}
+.cursiva {
+    padding-top: 2em;
+}
+
 .header h2 {
   text-align: center;
 }
@@ -54,7 +62,7 @@ body {
 
 .texto-d, .texto-i {
     
-    max-height: 653px;
+    
 }
 .texto-i {
     padding-left: 160px;
@@ -69,9 +77,11 @@ body {
 p {
     font-size: 18px;
     line-height: 25px;
+    
 }
 
 .btn-siguiente, .btn-anterior {
+    
     position: relative;
     top: 3em;
     color: white;
@@ -110,6 +120,7 @@ img {
         max-width: 30em;
         margin: auto;
     }
+    
     #pag1, #pag2, #pag3 {
         height: 100%;
     }
