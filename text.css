@@ -60,10 +60,7 @@ h2 {
   grid-template-columns: 50% 50%;
 }
 
-.texto-d, .texto-i {
-    
-    
-}
+
 .texto-i {
     padding-left: 160px;
     padding-right: 60px;
@@ -92,6 +89,7 @@ p {
 
 img {
     height: 80vh;
+    margin: auto;
 }
 .img-capitulo {
     display: flex;
@@ -115,16 +113,33 @@ img {
     }
     .texto-d, .texto-i {
         padding: 0;
+        margin: 0;
     }
     p {
         max-width: 30em;
         margin: auto;
+    }
+    p.titulo {
+        padding-bottom: 3em;
+        max-width: 19em;
+        font-size: 28px;
     }
     
     #pag1, #pag2, #pag3 {
         height: 100%;
     }
     .img-capitulo {
+        padding-bottom: 4em;
         margin-bottom: 4em;
     }
-}
+    
+
+    @media (max-width: 620px) {
+        p {
+            margin-left: 23px;
+            margin-right: 23px;
+        }
+        img {
+            height: 50vh;
+        }
+    }
