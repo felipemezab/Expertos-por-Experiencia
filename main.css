@@ -79,7 +79,7 @@ nav.menu a {
 }
 
 nav.menu a.home {
-    background-color: #546de5;
+    background-color: #130f40;
     color: white;
     border: none;
     padding: 10px;
@@ -87,13 +87,13 @@ nav.menu a.home {
 }
 
 nav.menu a.home:hover {
-    background-color: #546de5;
+    background-color: #130f40;
     color: white;
     padding: 10px;
 }
 
 nav.menu a:hover {
-    background-color: #546de5;
+    background-color: #130f40;
     color: white;
 }
 
@@ -133,7 +133,8 @@ p.autores {
 }
 
 .cap {
-    color: #546de5;
+    color: #130f40;
+    font-style: italic;
 }
 
 
