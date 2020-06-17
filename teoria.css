@@ -59,23 +59,22 @@ body::-webkit-scrollbar {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 3;
+    z-index: 2;
     height: 100%;
     background-color: #2c3e50;
-    width: 6vh;
+    width: 8vh;
 }
 .indexbar {
     position: fixed;
-    right: 6vh;
+    right: 0;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     height: 100%;
     background-color: #2c3e50;
     width: 0;
     border-radius: 20px 0 0 20px;
     overflow-x: hidden;
     transition: 0.5s;
-    overflow: auto;
 }
 
 
@@ -85,17 +84,27 @@ body::-webkit-scrollbar {
     color: #fff;
     display: block;
 }
-.closebtn {
-    margin-top: 2em;
-    padding: 1em;
-}
+
 .openbtn {
     margin-top: 2em;
-    padding: 1em;
+    padding: 1em 2em;
     cursor: pointer;
     background-color: transparent;
     color: white;
     border: none;
+}
+.closebtn {
+    position: absolute;
+    right: 0;
+    margin-top: 2em;
+    padding: 1em 2em;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.indice {
+    margin-top: 3em;
 }
 article {
     display: block;
@@ -117,3 +126,69 @@ p {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+h1 {
+    padding-top: 1em;
+    color: #d35400;
+}
+.footer {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+}
+.anterior {
+    padding-right: 6em;
+    padding-top: 3em;
+    text-align: right;
+}
+.siguiente {
+padding-left: 6em;
+padding-top: 3em;
+}
+
+.footer a:hover {
+    color: #d35400;
+    text-decoration: underline #d35400;
+}
+.footer a {
+    text-decoration: underline #000;
+    color: #000;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #fff;
+    margin: 0 14em;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #d35400;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+
+
+
+
+  

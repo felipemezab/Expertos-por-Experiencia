@@ -32,6 +32,7 @@
         document.getElementById("transparencia").style.display = "none";
         document.getElementById("body").style.overflow = "auto";
 }
+        
     </script>
 </head>
 
@@ -48,12 +49,18 @@
     </div>
 
     <div class="indexbar-closed">
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
+        <button class="openbtn" onclick="openNav()">
+            A
+        </button>
         
     </div>
 
     <div class="indexbar" id="mySidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <button class="closebtn" onclick="closeNav()">
+            A
+        </button>
+
         <ol class="indice">
             <li><a href="">Agradecimientos</a></li>
             <li><a href="">Dedicatoria</a></li>
@@ -88,7 +95,12 @@
         </ol>
     </div>
 
-    
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Índice</a></li>
+        <li><a href="#">Capítulo 1</a></li>
+        <li>Teoría de la modificabildiad cognitiva</li>
+      </ul>
 
     <article id="contenido">
         <header class="title">
@@ -191,6 +203,20 @@
 
     </article>
 
+    <footer>
+        <div class="footer">
+            <div class="anterior">
+                <a href="#"><h3>anterior<br>
+                    Paradigma de la Discapacidad Intelectual
+                </h3></a>
+            </div>
+            <div class="siguiente">
+                <a href="#"><h3>siguiente<br>
+                    Capítulo 2: De asesores a investigadores
+                </h3></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

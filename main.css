@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 35px;
     padding-top: 2rem;
 }
@@ -50,17 +50,18 @@ ol {
     text-decoration: none;
     list-style: none;
     font-size: 13px;
-    padding-top: 10px;
+    padding-top: 14px;
 }
 
 ol li a {
     text-decoration: none;
     font-size: 2em;
     color: black;
+    font-weight: 500;
 }
 
 ol a:hover {
-    color: #546de5;
+    color: #d35400;
 }
 
 
