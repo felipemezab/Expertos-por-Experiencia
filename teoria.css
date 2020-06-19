@@ -130,6 +130,9 @@ h1 {
     padding-top: 1em;
     color: #d35400;
 }
+
+
+
 .footer {
     display: flex;
     height: 20vh;
@@ -153,6 +156,10 @@ padding-top: 3em;
     text-decoration: underline #000;
     color: #000;
 }
+
+
+
+
 
 /* Style the list */
 ul.breadcrumb {
@@ -189,6 +196,6 @@ ul.breadcrumb {
 
 
 
-
+ 
 
   
