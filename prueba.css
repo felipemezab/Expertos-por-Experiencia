@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: Lora;
+    height: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+#section1, #section2, #section3 {
+    height: 100%;
+}
+#section3 {
+    background-image: url(images/textura.jpg);
+}
+.header { 
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #fff;
+    z-index: 2;
+}
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    right: 3em;
+  }
+.dot:hover {
+    background-color: #d35400;
+}  
+a.main-btn {
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 6em;
+    padding: 14px 2em;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+a.main-btn:hover {
+    background-color: #d35400;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1em;
+}
+.notas {
+    display: flex;
+    padding: 1em;
+}
+.folio {
+    display: flex;
+}
+.numero-i {
+    padding: 0 1em 0 26em;
+    width: 50%;
+}
+.numero-d {
+    padding: 0 1em 0 19em;
+    width: 50%;
+}
+.notas-i, .notas-d {
+    width: 50%;
+}
+.notas-i {
+    padding-left: 5em;
+    padding-right: 2em;
+}
+.notas-d {
+    padding-left: 2em;
+    padding-right: 7em;
+}
+
+.main {
+    display: flex;
+    padding-top: 6em;
+}
+article {
+    max-width: 50%;
+}
+.text-i {
+    padding: 2em 2em 1em 7em;
+}
+.text-d {
+    padding: 2em 7em 1em 2em;T
+}
+p {
+    font-size: 19px;
+    line-height: 27px;
+}
+p.folio {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+
+
+/* breadcrums */
+ul.breadcrumb {
+    list-style: none;;
+    margin: 0 0 0 17em;
+    padding: 16px 0;
+  }
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #d35400;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
