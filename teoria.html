@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expertos por experiencia </title>
-    <LINK REL=StyleSheet HREF="teoria.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="teoria.css">
+    <link rel="stylesheet" href="style.scss">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
     </style>
@@ -36,64 +38,25 @@
     </script>
 </head>
 
-<body id="body">
+<body>
 
-    <div id="transparencia">
-        a
-    </div>
-
-    <div class="sidebar">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <div class="indexbar-closed">
-        <button class="openbtn" onclick="openNav()">
-            A
-        </button>
-        
-    </div>
-
-    <div class="indexbar" id="mySidebar">
-        
-        <button class="closebtn" onclick="closeNav()">
-            A
-        </button>
-
-        <ol class="indice">
-            <li><a href="">Agradecimientos</a></li>
-            <li><a href="">Dedicatoria</a></li>
-            <li><a href="">Presentación del grupo</a></li>
-            <li><a href="">Prólogo</a></li>
-            <li><a href="">Capítulo 1: Conceptos previos</a>
-                <ol>
-                    <li><a href="#">Diseño centrado en las personas</a></li>
-                    <li><a href="#">Co diseño</a></li>
-                    <li><a href="#">Investigación inclusiva</a></li>
-                    <li><a href="#">Paradigma de la discapacidad intelectual</a></li>
-                </ol>
-            </li>
-            <li><a href="">Capítulo 2: De asesores a investigadores</a>
-                <ol>
-                    <li><a href="#">Introducción</a></li>
-                    <li><a href="#">objetivos</a></li>
-                    <li><a href="#">Etapa de Preparación</a></li>
-                    <li><a href="#">Etapa de Exploración</a></li>
-                    <li><a href="#">Etapa de Ideación</a></li>
-                    <li><a href="#">Etapa de Validación</a></li>
-                </ol>
-            </li>
-            <li><a href="">Capítulo 3: Resultados</a>
-                <ol>
-                    <li><a href="#">Heurísticas</a></li>
-                    <li><a href="#">Productos</a></li>
-                </ol>
-            </li>
-            
-            
-        </ol>
-    </div>
+      </div>
+  
 
     <ul class="breadcrumb">
         <li><a href="#">Home</a></li>
