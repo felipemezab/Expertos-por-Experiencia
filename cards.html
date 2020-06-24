@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tarjetas</title>
     <link rel="stylesheet" href="cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
     </style>
+    <script>$('button').click(function(e){
+        $('#myDiv').toggleClass('fullscreen'); 
+    });</script>
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1>Índice</h1>
         <div class="flex">
@@ -56,11 +62,21 @@
                 <h2>Capítulo 5</h2>
                 <h3>Aprendizajes</h3>
                 <ul class="card-list">
-                    
+
                 </ul>
             </div>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12">
+             <div id="myDiv">
+                 my div
+                <button>Full Screen</button>
+            </div>
+        </div>
+
+
 </body>
+
 </html>
