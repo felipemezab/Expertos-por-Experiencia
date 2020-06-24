@@ -149,14 +149,13 @@ ul.breadcrumb {
 
 .hamburger {
     position: fixed;
-    border: 1px solid #a09f9f;
-    background-color: #f3f3f3;
+    background-color: #D35400;
     top: 26px;
     right: 26px;
     z-index: 5;
     width: 3em;
     height: 3em;
-    padding: 7px;
+    padding: 3px 8px;
     border-radius: 10px;
     cursor: pointer;
     z-index: 12;
@@ -170,7 +169,7 @@ ul.breadcrumb {
     flex: none;
     width: 2em;
     height: 4px;
-    background: #000;
+    background: #fff;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
@@ -235,9 +234,8 @@ ul.indice h3 {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 1;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #eeeeee;
   height: 3em;
   display: flex;
 }
