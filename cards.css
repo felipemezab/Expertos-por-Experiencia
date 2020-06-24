@@ -163,3 +163,27 @@ ul.indice a {
   .menu-wrap .checkbox:checked:hover + .hamburger > div {
     transform: rotate(225deg);
 
+}
+ul.indice li {
+    list-style: none;
+}
+ul.indice a {
+    text-decoration: none;
+}
+
+
+.progress-container {
+    width: 10px;
+    height: 95vh;
+    background: #fff;
+    margin: 1em 1em 1em 1em;
+    border-radius: 10px;
+  }
+  
+.progress-bar {
+    height: 95vh;
+    background: #2c3e50;
+    width: 10px;
+    align-items: center;
+    border-radius: 10px;
+}

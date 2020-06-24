@@ -1,3 +1,5 @@
+/*Panel desplegable: https://www.youtube.com/watch?v=lB46vlLi0EY*/
+/*Scroll indicator: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp*/
 * {
     margin: 0;
     padding: 0;
@@ -15,35 +17,11 @@ body {
     overflow: auto;
 }
 body::-webkit-scrollbar {
-    display: none;
+    display:;
 }
 
-.progress-container {
-    width: 10px;
-    height: 95vh;
-    background: #fff;
-    margin: 1em 1em 1em 1em;
-    border-radius: 10px;
-  }
-  
-.progress-bar {
-    height: 95vh;
-    background: #2c3e50;
-    width: 10px;
-    align-items: center;
-    border-radius: 10px;
-}
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    height: 100%;
-    background-color: #EAEAEA;
-    border-radius: 0 20px 20px 0;
-    width: 6vh;
-    display: flex;
-}
+
+
 
 article {
     display: block;
@@ -53,12 +31,12 @@ article {
 header.title {
     margin: 20vh 0;
     max-width: 35em;
-    margin-left: auto;
+    margin-left: 4em;
     margin-right: auto;
 }
 article > * {
     max-width: 35em;
-    margin-left: auto;
+    margin-left: 4em;
     margin-right: auto;
 }
 p {
@@ -105,13 +83,17 @@ ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color: #fff;
-    margin: 0 14em;
+    margin: 0 4em;
+    font-family: 'Lato';
+    position: absolute;
+    padding-top: 2em;
+    top: 0;
   }
   
   /* Display list items side by side */
   ul.breadcrumb li {
     display: inline;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   /* Add a slash symbol (/) before/behind each list item */
@@ -134,55 +116,52 @@ ul.breadcrumb {
   }
 
 
-
- 
-
-  
-  /* MENU STYLES */
-  .menu-wrap {
+  .checkbox {
+    display: none;
+}
+.checkbox:checked ~ .left-panel {
+    right: 0;
+}
+.left-panel {
+    background-color: #eaeaea;
     position: fixed;
+    right: -30em;
     top: 0;
-    right: 0;
-    z-index: 1;
-  }
-  
-  .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+    width: 30em;
+    height: 100%;
+    transition: 0.4s;
+    padding: 5em  ;
+}
+.hamburger {
+    position: fixed;
+    border: 1px solid #a09f9f;
+    background-color: #f3f3f3;
+    top: 26px;
+    right: 26px;
+    z-index: 5;
+    width: 3em;
+    height: 3em;
+    padding: 7px;
+    border-radius: 10px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-  }
-  
-  .menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+}
+
+
   /* Hamburger Line */
   .menu-wrap .hamburger > div {
-    position: relative;
+    position: absolute;
+    top: 20px;
     flex: none;
-    width: 100%;
+    width: 2em;
     height: 2px;
     background: #000;
-    display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
+    z-index: ;
+    cursor: pointer;
   }
+  
   
   /* Hamburger Lines - Top & Bottom */
   .menu-wrap .hamburger > div::before,
@@ -202,81 +181,54 @@ ul.breadcrumb {
   }
   
   /* Toggler Animation */
-  .menu-wrap .toggler:checked + .hamburger > div {
+  .menu-wrap .checkbox:checked + .hamburger > div {
     transform: rotate(135deg);
   }
   
   /* Turns Lines Into X */
-  .menu-wrap .toggler:checked + .hamburger > div:before,
-  .menu-wrap .toggler:checked + .hamburger > div:after {
+  .menu-wrap .checkbox:checked + .hamburger > div:before,
+  .menu-wrap .checkbox:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
   }
   
   /* Rotate On Hover When Checked */
-  .menu-wrap .toggler:checked:hover + .hamburger > div {
+  .menu-wrap .checkbox:checked:hover + .hamburger > div {
     transform: rotate(225deg);
-  }
-  
-  /* Show Menu */
-  .menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-  }
-  
-  .menu-wrap .toggler:checked ~ .menu > div {
-    transform: TranslateX(1);
-    transition-duration: var(--menu-speed);
-  }
-  
-  .menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
-  }
-  
-  .menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu-wrap .menu > div {
-    background: #eaeaea;
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: TranslateX(0);
-    transition: all 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div > ul > li {
+
+}
+ul.indice li {
     list-style: none;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  
-  .menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
+}
+ul.indice a {
     text-decoration: none;
-    transition: color 0.4s ease;
-  }
-  
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 3em;
+  display: flex;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #ccc;
+  margin: auto 1em;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 12px;
+  background: #d35400;
+  width: 0%;
+  align-items: center;
+  justify-content: center;
+}
